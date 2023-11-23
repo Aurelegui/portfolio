@@ -1,3 +1,4 @@
+/* eslint-disable import/no-extraneous-dependencies */
 const defaultTheme = require('tailwindcss/defaultTheme');
 const daisyuiPlugin = require('daisyui');
 
@@ -7,7 +8,7 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        sans: ['"Manrope"', ...defaultTheme.fontFamily.sans],
+        sans: ['"Nunito"', ...defaultTheme.fontFamily.sans],
       },
       fontWeigth: {
         'extra-bold': '800',
