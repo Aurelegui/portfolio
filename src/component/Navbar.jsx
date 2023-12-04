@@ -4,51 +4,42 @@ import { React, useState } from 'react';
 function Navbar() {
   const [hideElement, setHideElement] = useState(true);
 
-  // add event listners
+  // add event listners for mobile menu
   const HandleClick = () => {
     setHideElement((prev) => !prev);
   };
 
   return (
-    <nav>
-      <div className="navbar h-24 fixed top-0 justify-between bg-white items-center">
+    <nav className="bg-[#F5F3F0] max-w-full">
+      <div className="navbar h-24 top-0 justify-between items-center w-screen-xl px-4 py-8">
         {/* Left side Navbar */}
-        <div className="ml-8">
-          <img alt="none" src="none" />
-          <div className="text-black">Aurele Guitard</div>
+        <div className="">
+          {/* <img alt="none" ="none" /> */}
+          <div className="">
+            <div className="text-black font-semibold">AURELE</div>
+            <div className="text-black font-semibold">GUITARD</div>
+          </div>
         </div>
         {/* Right side Navbar */}
-        <div className="hidden md:flex gap-6 mr-8">
+        <div className="hidden md:flex gap-6">
           {/* Need to refractor css for buttons */}
-          <button
-            className="btn px-7 border-transparent rounded-3xl bg-white text-black hover:bg-white hover:border-gray-500 transition duration-500"
-            type="button"
-          >
+          <button className="nav-buttons" type="button">
             ABOUT
           </button>
-          <button
-            className="btn px-7 border-transparent rounded-3xl bg-white text-black hover:bg-white hover:border-gray-400 transition duration-500"
-            type="button"
-          >
+          <button className="nav-buttons" type="button">
             PROJECTS
           </button>
-          <button
-            className="btn px-7 border-transparent rounded-3xl bg-white text-black hover:bg-white hover:border-gray-400 transition duration-500"
-            type="button"
-          >
+          <button className="nav-buttons" type="button">
             EXPERIENCE
           </button>
-          <button
-            className="btn px-7 border-transparent rounded-3xl bg-white text-black hover:bg-white hover:border-gray-400 transition duration-500"
-            type="button"
-          >
+          <button className="nav-buttons" type="button">
             CONTACT
           </button>
         </div>
-        <div className="md:hidden pr-5">
+        <div className="md:hidden">
           <button
             type="button"
-            className="mobile-menu-button"
+            className="mobile-menu-button px-1 py-1 border border-gray-400 rounded-md"
             onClick={HandleClick}
           >
             <svg
@@ -70,11 +61,19 @@ function Navbar() {
         </div>
       </div>
       {!hideElement && (
-        <div className="absolute mobile-menu md:hidden bg-red-700 text-black w-80">
-          <a href="/#">ABOUT</a>
-          <a href="/#">PROJECTS</a>
-          <a href="/#">EXPERIENCE</a>
-          <a href="/#">CONTACT</a>
+        <div className="flex flex-col items-center bg-[#F5F3F0] md:hidden h-72 gap-10">
+          <a className="mobile-menu-links" href="/#">
+            ABOUT
+          </a>
+          <a className="mobile-menu-links" href="/#">
+            PROJECTS
+          </a>
+          <a className="mobile-menu-links" href="/#">
+            EXPERIENCE
+          </a>
+          <a className="mobile-menu-links" href="/#">
+            CONTACT
+          </a>
         </div>
       )}
     </nav>

@@ -1,11 +1,12 @@
 import React from 'react';
 import Navbar from './component/Navbar';
+import Hero from './component/Hero';
 
 function App() {
   return (
-    <div className="flex">
+    <div className="">
       <Navbar />
-      <div className="container bg-white h-screen text-black">wassup</div>
+      <Hero />
     </div>
   );
 }

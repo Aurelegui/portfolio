@@ -9,6 +9,8 @@ module.exports = {
     extend: {
       fontFamily: {
         sans: ['"Nunito"', ...defaultTheme.fontFamily.sans],
+        serif: ['"Manrope"'],
+        mono: ['"Montserrat"'],
       },
       fontWeigth: {
         'extra-bold': '800',

@@ -1,3 +1,13 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer components {
+  .nav-buttons {
+    @apply btn px-7 border-transparent rounded-3xl bg-[#F5F3F0] text-black hover:bg-[#F5F3F0] hover:border-gray-400 transition duration-500;
+  }
+
+  .mobile-menu-links {
+    @apply text-sm font-semibold py-2 px-4 text-black hover:bg-gray-50 w-full text-center;
+  }
+}
