@@ -7,13 +7,10 @@ const Navbar = () => {
   return (
     <>
       <header>
-        <nav>
-          <ul className="flex justify-between">
+        <nav className="px-6 py-4">
+          <ul className="flex justify-between items-center">
             <li>
               <Logo />
-            </li>
-            <li>
-              <Link href={"/"}>Hello</Link>
             </li>
             <li>
               <ModeToggle />

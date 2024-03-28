@@ -3,7 +3,7 @@ import React from "react";
 
 const Logo = () => {
   return (
-    <div>
+    <div className="">
       <a
         className="pointer-events-none flex place-items-center gap-3"
         href="/"
@@ -11,10 +11,10 @@ const Logo = () => {
         rel="noopener noreferrer"
       >
         <Image
-          src={"/vercel.svg"}
-          alt="Vercel Logo"
+          src={"/Logo-AG-WHITE.svg"}
+          alt="Aurele Guitard Logo"
           className="dark:invert"
-          width={100}
+          width={80}
           height={24}
           priority
         />
