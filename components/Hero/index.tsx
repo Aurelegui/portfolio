@@ -1,6 +1,7 @@
 import React from "react";
 import { motion } from "framer-motion";
 import { AuroraBackground } from "../ui/aurora-background";
+import Navbar from "../Navbar";
 
 const Hero = () => {
   return (
@@ -16,6 +17,7 @@ const Hero = () => {
           }}
           className="relative flex flex-col gap-4 items-center justify-center px-4"
         >
+          <Navbar />
           <div className="text-3xl md:text-7xl font-bold dark:text-white text-center">
             Background lights are cool you know.
           </div>
